@@ -1,0 +1,172 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    display: block;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.team_name{
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.Body{
+    margin: 10px auto;
+    /* height: 800px; */
+    width: 350px;
+    background-color: rgb(30, 34, 34);
+    padding: 10px 50px;
+}
+
+
+
+
+.left_content{
+    margin: 6px auto;
+    width: 80%;
+    height: 500px;
+}
+
+
+/* 捡球数量和剩余电量 */
+.container{
+    box-shadow: 0 0 6px rgb(168, 173, 180);
+    background-color: rgb(24, 30, 38);
+    padding-top: 0.5% ;
+    margin: 30px 10px;
+    height: 20%;
+    border-radius: 15px;
+    position: relative;
+    color: white;
+}
+.label,.ball_number{
+    margin: 5% auto;
+    text-align: center;
+}
+
+.battery_value{
+    margin: 15px auto;
+    width: 50%;
+    height: 18%;
+}
+.value{
+    float: left;
+    margin: 0 5%;
+    width: 15%;
+    height: 100%;
+    background-color: rgb(30, 242, 62);
+    border-radius: 50%;
+}
+
+
+/* 图片 */
+
+.right_content{
+    background-color: rgb(136, 167, 237);
+    overflow: hidden;
+    margin: 0 auto;;
+    width: 80%;
+    height: 174.5px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgb(168, 173, 180);
+}
+
+/* 小球状态 */
+.car_state{
+    float: left;
+    width: 100%;
+    height: 10%;
+    color: red;
+    text-align: center;
+}
+
+
+
+
+/* 滑动按钮 */
+.switch-box {
+    text-align: center;
+    display: block;
+    margin-top: 24px;
+}
+.switch-box-slider {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    height: 24px;
+    width: 50px;
+    background: rgb(252, 252, 252);
+    border-radius: 12px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.switch-box-slider:after {
+    position: absolute;
+    display: block;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgb(168, 173, 180);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    content: '';
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+  
+.switch-box-label{
+    color: rgb(168, 173, 180);
+    margin-right: 10px;
+}
+.switch-box-input {
+display: none;
+} 
+.switch-box-input ~{
+margin-left: 8px;
+}
+.switch-box-input:checked ~ .switch-box-slider:after{
+    background-color: rgb(52, 152, 219);
+    left: 26px;
+}
+.switch-box-input:checked ~ .switch-box-slider{
+    background-color: rgb(159, 207, 238);
+}
+
+.foot{
+    color: white;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.icon_top, .icon_middle,.icon_bottom{
+    text-align: center;
+    width: 30%;
+    margin: 1.5% auto;
+    height: 30%;    
+}
+.icon_bottom, .icon_middle, .icon_top{
+    width: 100%;
+}
+
+#left{
+    margin-right: 10px;
+}
+#right{
+    margin-left: 10px;
+}
+
+#forward:hover,#right:hover,#left:hover,#back:hover, #stop:hover, #left_rotation:hover, #right_rotation:hover, #paw:hover,#paw2:hover{
+    cursor: pointer;
+}
+
+#forward:active,#right:active,#left:active,#back:active,#stop:active,#left_rotation:active, #right_rotation:active, #paw:active,#paw2:active{
+    background-color: rgb(69, 141, 223);
+    border-radius: 50%;
+}
+

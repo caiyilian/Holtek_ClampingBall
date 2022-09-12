@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/index.css" rel ="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="Body">
+        <h2 class="team_name">队伍名称：我捡的球都队</h2>
+        <div class="content">
+            <div class="left_content">
+                <div class="switch-box">
+                    <label for="mode" class="switch-box-label">自动模式</label>
+                    <input id="mode" class="switch-box-input" type="checkbox" />
+                    <label for="mode" class="switch-box-slider"></label>
+                </div>
+
+                <div class="container">
+                    <div class="label">小车已捡球数</div>
+                    <h2 class="ball_number">0</h2>
+                </div>
+
+                <div class="container">
+                    <div class="label">小车剩余电量</div>
+                    <div class="battery_value">
+                        <div class="value" id="1"></div>
+                        <div class="value" id="2"></div>
+                        <div class="value" id="3"></div>
+                        <div class="value" id="4"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="label">小车当前状态</div>
+                    <h2 class="car_state">搜寻小球</h2>
+                </div> 
+            </div>
+            <div>
+                
+            </div>
+             <div class="right_content" id="control"  style="display: none;">
+                 <div class="icon_top">
+                    <img class="iconfont" src="/img/left_rotation.png" id="left_rotation">
+                     <img class="iconfont" src="/img/forward.png" id="forward">
+                     <img class="iconfont" src="/img/right_rotation.png" id="right_rotation">
+                </div>
+                <div class="icon_middle">
+                    <img class="iconfont" src="/img/left.png" id="left">
+                    <img class="iconfont" src="/img/stop.png" id="stop">
+                    <img class="iconfont" src="/img/right.png" id="right">
+                </div>
+                <div class="icon_bottom">
+                    <img class="iconfont" src="/img/paw.png" id="paw">
+                    <img class="iconfont" src="/img/back.png" id="back">
+                    <img class="iconfont" src="/img/paw2.png" id="paw2">
+                </div>
+                 
+            </div>
+
+            <div class="right_content" id="uncontrol">
+                <img src="/img/pingpongball.png">
+            </div>
+
+            <div class="foot">
+                <div>The balls we picked up were all right</div>
+                <a href="#">Back to top</a>
+            </div>
+        </div>
+        
+    </div>
+    <script src="/JavaScript.js"></script>
+</body>
+</html>
